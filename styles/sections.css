@@ -65,6 +65,65 @@
         }
     }
 } 
+.destaqueIA {   
+    display: flex; 
+    flex-direction: column;   
+    gap: 2rem;
+    max-height: 53.5rem;
+    margin-bottom: 5rem; 
+   & main {
+    & figure {   
+        max-height: 11rem; 
+        display: flex; 
+        gap: .93rem;  
+        margin-bottom: 2rem; 
+        & img {
+            max-width: 5rem;
+            max-height: 5rem;
+        }
+        & figcaption {  
+            overflow: hidden;    
+            & h2 {
+                -webkit-line-clamp: 2;
+                line-clamp: 2; 
+            }
+           & p {
+            -webkit-line-clamp: 4;
+            line-clamp: 4; 
+            display: -webkit-box;
+            -webkit-box-orient: vertical;  
+           } 
+        }
+    } 
+   } 
+    & aside {  
+       max-width: 30.5rem;  
+       display: flex;
+       flex-direction: column; 
+       & img:nth-child(1) { 
+        margin-bottom: 2rem;
+       }  
+        & figure {   
+            display: flex;  
+            max-height: 4.5rem; 
+            flex-direction: row; 
+            gap: .93rem;  
+            margin-bottom: 2rem; 
+            overflow: hidden;
+            & img {
+                max-width: 4.5rem;
+                height: 100%;    
+            }  
+            & figcaption {  
+                & h2 { 
+                    -webkit-line-clamp: 2;
+                    line-clamp: 2;  
+                    font-size: .87rem;  
+                }
+            } 
+        }  
+    }  
+}
 @media(width >= 80em) {
     & .destaques { 
         flex-direction: row; 
@@ -93,4 +152,16 @@
             }
         }
     }   
+    & .destaqueIA {   
+        flex-direction: row;    
+       & main {
+        & figure {  
+            flex-direction: row-reverse;   
+            & img {
+                max-width: 11rem;
+                max-height: 11rem;
+            } 
+        } 
+       }  
+    }
 } 
