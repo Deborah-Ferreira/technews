@@ -1,0 +1,44 @@
+header {
+    & .primary {
+        text-align: center;
+        align-items: center;
+        gap: .5rem;
+
+        & a:nth-child(1) {
+            background: url(../assets/icons/List.svg) no-repeat left/1.25rem;
+            padding: .62rem;
+        }
+
+        & a:nth-child(3) {
+            margin: auto;
+        }
+
+        & a:nth-child(5) {
+            background: url(../assets/icons/MagnifyingGlass.svg) no-repeat left/1.25rem;
+            padding: .6rem;
+        }
+    }
+
+    & .secondary {
+        border-block: 1px solid hsla(213, 27%, 84%, 0.106);
+        gap: 1.75rem;
+        white-space: nowrap;
+        overflow: scroll; 
+        &::-webkit-scrollbar {
+            display: none; 
+        }
+        scrollbar-color: transparent transparent;
+    } 
+    @media(width >=80em) {
+        & .primary {
+            & a:nth-child(3) {
+                margin: auto;
+                height: 1.3rem;
+            }
+        }
+
+        & .secondary {
+            justify-content: space-between;
+        }
+    }
+}
