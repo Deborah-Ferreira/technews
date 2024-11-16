@@ -18,6 +18,15 @@
     --fw-regular: 400;
     --fs-lg: 1.5rem;
     --fs-base: 1rem;  
+    --py-base: 1rem;
+    --py-md: .87rem;
+    --py-xlg: 2rem;
+    --my-lg: 1.5rem;
+    --px-lg: 1rem;
+    --m-lg: 1rem;
+    --top: .75rem;
+    --bottom: 1.5rem;
+    --gap: 2rem;
 } 
 html {
     font-family: var(--ff-sans);
@@ -61,3 +70,12 @@ a {
     text-decoration: none; 
     color: var(--texto-color-secondary);
 } 
+@media(width >=80em) {
+    :root {
+        --py-base: 1.25rem;
+        --py-xlg: 5rem;
+        --px-lg: 2rem;
+        --m-lg: 1.5rem;
+        --gap: 1rem;
+    } 
+}

@@ -1,0 +1,56 @@
+.py-base {
+    padding-block: var(--py-base); 
+}
+.py-md {
+    padding-block: var(--py-md);
+} 
+.py-xlg {
+    padding-block: var(--py-xlg);
+} 
+.my-lg {
+    margin-block: var(--my-lg);
+} 
+.px-lg {
+    padding-inline: var(--px-lg); 
+} 
+.top {
+    padding-top: var(--top);
+}
+.bottom {
+    margin-bottom: var(--bottom);
+}
+.gap {
+    gap: var(--gap);
+}
+.gap-1 {
+    gap: 1rem;
+}  
+.flex-direction {
+    flex-direction: column;
+}
+.flex {
+    display: flex;
+}
+.grid {
+    display: grid;
+} 
+.desktop-only {
+    display: none;
+} 
+.texto { 
+    width: 100%; 
+    height: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    text-wrap: nowrap; 
+    white-space: normal;
+}   
+@media(width >= 80em) {
+    & .desktop-only {
+        display: initial;
+    } 
+}
