@@ -60,10 +60,18 @@ small {
     font-weight: var(--fw-semiBold);
 }
 
-span {  
+span {
+    display: flex;
+    margin-bottom: .5rem;
+    border-radius: .25rem;
     font-weight: var(--fw-semiBold);
     background-color: var(--brand-color-dark);
-    color: var(--texto-color-primary); 
+    color: var(--texto-color-primary);
+    padding-inline: .5rem;
+    max-width: fit-content;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    font-size: .62rem;
 }
 
 a {

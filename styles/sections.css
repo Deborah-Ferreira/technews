@@ -1,0 +1,54 @@
+.destaques {
+    margin-top: 2.5rem; 
+    
+    & img:nth-child(1) {
+        max-width: 100%;
+        height: 26rem;
+        object-fit: cover;
+    }
+   
+    & figcaption {
+        position: absolute;
+        bottom: 0;
+        margin: var(--m-lg);    
+    }
+   
+    & figure { 
+        position: relative;  
+        
+        &::before {
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 13rem;
+            bottom: 0;
+            background: linear-gradient(#02061700, #020617);
+        } 
+        
+    }
+}  
+.container {
+    & img {
+        width: 100%;
+        max-height: 12.5rem;
+    }
+} 
+@media(width >= 80em) {
+    & .destaques { 
+        flex-direction: row; 
+        display: flex; 
+        & img:nth-child(1) { 
+            max-width: 100%;
+            height: 100%; 
+        } 
+        & img {
+            max-height: 100%;
+        }     
+    } 
+    & .container {
+        grid-template-columns: repeat(2, 1fr); 
+        & figcaption {
+            margin: .75rem;
+        }
+    }
+} 
